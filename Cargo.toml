@@ -1,0 +1,13 @@
+[package]
+name = "rust-snippets"
+version = "0.1.0"
+authors = ["albino"]
+edition = "2018"
+description = "Random interesting things in coded in Rust"
+repository = "https://github.com/albinocordeiro/rust-snippets"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
