@@ -1,6 +1,6 @@
 extern crate color_eyre;
 
-use color_eyre::{Result};
+use color_eyre::Result;
 use std::io::stdin;
 
 fn main() -> Result<()> {
@@ -25,13 +25,13 @@ fn main() -> Result<()> {
     let mut kstring = String::new();
     println!("Enter zigzag height (>0):");
     stdin().read_line(&mut kstring)?;
-    let k = kstring.replace("\n","").parse::<usize>()?;
+    let k = kstring.replace("\n", "").parse::<usize>()?;
 
     // Inputs: line, k
 
-    let get_spaces =  |row: usize, desc: bool| -> usize {
+    let get_spaces = |row: usize, desc: bool| -> usize {
         let mut spaces = (k - 1) * 2 - 1; // initialize with maximum possible spaces
-        
+
         if desc {
             spaces -= row * 2;
         } else {
@@ -60,4 +60,3 @@ fn main() -> Result<()> {
 
     Ok(())
 }
-
