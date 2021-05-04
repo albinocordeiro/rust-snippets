@@ -168,7 +168,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_transition_prob_list_to_map() -> () {
+    fn test_transition_prob_list_to_map() {
         let transition_list = get_sample_transition_probs();
         let transition_map = transition_prob_list_to_map(&transition_list);
 
@@ -200,7 +200,7 @@ mod tests {
     }
 
     #[test]
-    fn test_visits_histogram_to_string() -> () {
+    fn test_visits_histogram_to_string() {
         let mut mock_visits_hist = HashMap::new();
         for c in "aabbbcccc".chars() {
             let val = mock_visits_hist.entry(c).or_insert(0i64);
