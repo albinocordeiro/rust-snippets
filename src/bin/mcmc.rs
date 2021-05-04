@@ -168,7 +168,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_transition_prob_list_to_map() -> Result<()> {
+    fn test_transition_prob_list_to_map() -> () {
         let transition_list = get_sample_transition_probs();
         let transition_map = transition_prob_list_to_map(&transition_list);
 
@@ -177,8 +177,6 @@ mod tests {
                 transition_map.contains_key(&tp.origin) && transition_map.contains_key(&tp.dest)
             );
         }
-
-        Ok(())
     }
 
     #[test]
@@ -202,7 +200,7 @@ mod tests {
     }
 
     #[test]
-    fn test_visits_histogram_to_string() -> Result<()> {
+    fn test_visits_histogram_to_string() -> () {
         let mut mock_visits_hist = HashMap::new();
         for c in "aabbbcccc".chars() {
             let val = mock_visits_hist.entry(c).or_insert(0i64);
@@ -212,6 +210,5 @@ mod tests {
         assert!(for_display.contains("a - 2"));
         assert!(for_display.contains("b - 3"));
         assert!(!for_display.contains("c - 3"));
-        Ok(())
     }
 }
