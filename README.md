@@ -4,10 +4,10 @@ Random interesting things coded in Rust
 ## Markov Chain Monte Carlo (MCMC) experiment
 ![Simplest MCMC ever](./images/mcmc.png)
 
-[//]: # [![Crates.io](https://img.shields.io/crates/v/rust-snippets.svg)](https://crates.io/crates/rust-snippets)
-[//]: # [![Docs.rs](https://docs.rs/rust-snippets/badge.svg)](https://docs.rs/rust-snippets)
-[//]: # [![CI](https://github.com/albinocordeiro/rust-snippets/workflows/Continuous%20Integration/badge.svg)](https://github.com/albinocordeiro/rust-snippets/actions)
-[//]: # [![Coverage Status](https://coveralls.io/repos/github/albinocordeiro/rust-snippets/badge.svg?branch=master)](https://coveralls.io/github/albinocordeiro/rust-snippets?branch=master)
+[![Crates.io](https://img.shields.io/crates/v/rust-snippets.svg)](https://crates.io/crates/rust-snippets)
+[![Docs.rs](https://docs.rs/rust-snippets/badge.svg)](https://docs.rs/rust-snippets)
+[![CI](https://github.com/albinocordeiro/rust-snippets/workflows/Continuous%20Integration/badge.svg)](https://github.com/albinocordeiro/rust-snippets/actions)
+[![Coverage Status](https://coveralls.io/repos/github/albinocordeiro/rust-snippets/badge.svg?branch=master)](https://coveralls.io/github/albinocordeiro/rust-snippets?branch=master)
 
 ## Installation
 cargo run
