@@ -27,7 +27,7 @@ fn main() -> Result<()> {
     stdin().read_line(&mut kstring)?;
     let k = kstring.replace("\n", "").parse::<usize>()?;
 
-    // Inputs: line, k
+    // Inputs: sentence, k
 
     let get_spaces = |row: usize, desc: bool| -> usize {
         let mut spaces = (k - 1) * 2 - 1; // initialize with maximum possible spaces
